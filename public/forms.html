@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Forms Bureau (GBSF Registers) | Guild of the Black Sky</title>
+  <meta name="description" content="Central bureaucratic registry of the Guild of the Black Sky. Download and file canonical GBSF forms: contracts, requisitions, trade agreements, and post-mortem pledges.">
+  <link rel="stylesheet" href="css/style.css?v=2.1-clean">
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="Guild of the Black Sky Home">
+        <div class="brand-logo-mark" aria-hidden="true">
+          <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+        </div>
+        <span class="brand-title">BLACK SKY</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="gen3.html" class="nav-link">Airships & Docks</a></li>
+          <li><a href="map.html" class="nav-link">Realm Map</a></li>
+          <li><a href="spectra.html" class="nav-link">Corpus Corpus</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="staff.html" class="nav-link">Leadership</a></li>
+          <li><a href="forms.html" class="nav-link active">Forms Bureau</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <span class="category">Bureau of Regulatory Affairs & Sacred Desk Registers</span>
+      <h1>Canonical GBSF Forms Repository</h1>
+      <p class="page-lead">
+        Welcome to the central bureaucratic repository of the Guild of the Black Sky. In accordance with Confluence municipal code 
+        and the codified regulations of Osterra, all agreements, member contracts, corpse pledges, requisitions, and grievances 
+        must be formally filed in the Arcane Ledgers.
+      </p>
+    </header>
+
+    <!-- Interactive Filter & Search Bar -->
+    <div style="background: var(--bg-card); border: 1px solid var(--border-tactical); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center;">
+      <div style="flex: 1; min-width: 260px;">
+        <label for="formSearchInput" style="margin-bottom: 0.25rem; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Search Canonical Dockets</label>
+        <input type="text" id="formSearchInput" placeholder="Filter by form title, code (e.g. GMSF0A, GBSF1A, GBSF13A, 702B)...">
+      </div>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <button type="button" class="btn btn-secondary filter-btn active" data-filter="all" style="font-size: 0.78rem; padding: 0.5rem 0.8rem;">All Forms</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="membership" style="font-size: 0.78rem; padding: 0.5rem 0.8rem;">Membership & Contracts</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="trade" style="font-size: 0.78rem; padding: 0.5rem 0.8rem;">Trade & Catalogues</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="corpus" style="font-size: 0.78rem; padding: 0.5rem 0.8rem;">Corpus Corpus & Training</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="legal" style="font-size: 0.78rem; padding: 0.5rem 0.8rem;">Legal & Grievances</button>
+      </div>
+    </div>
+
+    <!-- Forms Catalog Grid -->
+    <div class="form-catalog-grid" id="formsContainer">
+
+      <!-- GMSF0A: Petition for Form -->
+      <article class="form-card" data-category="legal" style="border-left: 4px solid var(--gobs-orange-bright);">
+        <div>
+          <span class="badge-orange">GMSF0A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--gobs-orange-bright);">PREREQUISITE DOCKET</span>
+          <h3>Petition for Form</h3>
+          <p class="form-purpose">
+            The foundational administrative instrument of Black Sky bureaucracy. Required by all citizens, contractors, and visiting envoys prior to receiving permission to request any subsequent specialized GBSF docket.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: SACRED DESK REGISTRY</span>
+            <span>WOODFORD AUDIT: REQUIRED</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF1A: Permanent Member Contract -->
+      <article class="form-card" data-category="membership">
+        <div>
+          <span class="badge-gold">GBSF1A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold);">CAREER TRACK</span>
+          <h3>Permanent Member Contract</h3>
+          <p class="form-purpose">
+            Official lifetime membership indenture. Enrolls the candidate under the Council of Chairmen with full voting franchise, guarantees quarterly seasonal salary based on highest tier, and guarantees legal defense by Black Sky shield legions.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: EXECUTIVE COUNCIL</span>
+            <span>DISBURSEMENT: 3-MONTH CYCLE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF2D: Temporary Contract -->
+      <article class="form-card" data-category="membership">
+        <div>
+          <span class="badge-orange">GBSF2D</span>
+          <h3>Temporary Contractor Agreement</h3>
+          <p class="form-purpose">
+            Term agreement for external specialists, alchemists, carpenters, and mercenary squads contracted for specific seasonal campaigns or construction initiatives in the Confluence Terraces.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: OPERATIONS & LOGISTICS</span>
+            <span>DURATION: 1–3 MONTHS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF3C: Requisition Form -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-hex">GBSF3C</span>
+          <h3>Official Requisition Form</h3>
+          <p class="form-purpose">
+            Official docket to requisition raw materials, glowstone bricks, phlogiston fuel cells, weapons, armor, or alchemical silver from the Central Confluence Arsenals.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: INFRASTRUCTURE (RIASTRAD)</span>
+            <span>CENTRAL ARSENAL SECTOR</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF4A: Permanent Contract Amendments -->
+      <article class="form-card" data-category="membership">
+        <div>
+          <span class="badge-gold">GBSF4A</span>
+          <h3>Permanent Contract Amendments</h3>
+          <p class="form-purpose">
+            Allows senior guild members to formally request adjustments to duty stations, salary tier recognition, departmental transfers, or leaves of absence.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: SACRED DESK LEGAL</span>
+            <span>REVIEW: COUNCIL OF CHAIRMEN</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF5A: Temp FactionMember Contract -->
+      <article class="form-card" data-category="membership">
+        <div>
+          <span class="badge-orange">GBSF5A</span>
+          <h3>Temporary Faction Member Contract</h3>
+          <p class="form-purpose">
+            Accelerated auxiliary contract designed for traveling Everwar adventurers and allied foreign citizens seeking temporary asylum, wages, or mutual defense within Black Sky borders.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: INTERNAL HARMONY (NIKOS)</span>
+            <span>ONBOARDING: EXPEDITED</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF6B: Standard Catalogue -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-hex">GBSF6B</span>
+          <h3>Standard Delivery Catalogue</h3>
+          <p class="form-purpose">
+            The codified pricing roster of standard timber, iron ingots, grain supplies, slow-smoked provisions from The Butcher, and glowstone gravel available for export across Osterra.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: TRADE & COMMERCE</span>
+            <span>UPDATED: QUARTERLY</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF7B: Catalogue Bill of Receipt -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-hex">GBSF7B</span>
+          <h3>Catalogue Bill of Receipt</h3>
+          <p class="form-purpose">
+            Mandatory dockside signoff verifying cargo arrival, inspectoral seals, and freight tonnage delivered to the Confluence Sky Docks or subterranean freight gates.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: SKYPORT CUSTOMS</span>
+            <span>BERTHS 1–3 DOCKSIDE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF8A: Official Trade Form -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-gold">GBSF8A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold);">CHURCH OF PECUNE</span>
+          <h3>Official Bilateral Trade Treaty</h3>
+          <p class="form-purpose">
+            Sacred commercial pact ratified under Pecune's blessing. Legally binds tariffs, exchange rates, and safe-conduct guarantees between Confluence and foreign realms (such as The Grove or White Ravens).
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: TRADE & FINANCES</span>
+            <span>JURISDICTION: INTER-FACTION</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF9A: Invoice -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-hex">GBSF9A</span>
+          <h3>Official Certified Invoice</h3>
+          <p class="form-purpose">
+            Certified bill of indebtedness demanding payment in gold sovereigns, silver crowns, or certified mithril notes. Issued with strict payment windows and late fees.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: EXCHEQUER'S VAULTS</span>
+            <span>REPUTATION TOKENS ACCEPTED</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF10A: Premium Catalogue -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-gold">GBSF10A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold);">HIGH MARKET</span>
+          <h3>Premium Delivery Catalogue</h3>
+          <p class="form-purpose">
+            Exclusive registry of high-tier enchanted weapons, refined mithril bullion, ancient Magelord relics, and customized airship parts available in Confluence's High Market.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: HIGH MARKET COMMERCE</span>
+            <span>CURRENCY: MITHRIL & GOLD</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF12A: Petition for Redress of Grievances -->
+      <article class="form-card" data-category="legal">
+        <div>
+          <span class="badge-orange">GBSF12A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: #ef4444;">HIGH COURT</span>
+          <h3>Petition for Redress of Grievances (Libel, Defamation, Slander)</h3>
+          <p class="form-purpose">
+            Formal legal filing submitted to the High Court of Confluence to seek monetary damages or public retraction for false statements, defamation of professional character, or breach of business respect.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: HIGH COURT OMBUDSMAN</span>
+            <span>REVIEW: EXPEDITED</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF13A: Merchant Contract -->
+      <article class="form-card" data-category="trade">
+        <div>
+          <span class="badge-gold">GBSF13A</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold);">BAZAAR STALL LICENSE</span>
+          <h3>Independent Merchant Contract</h3>
+          <p class="form-purpose">
+            Commercial license permitting independent merchants and foreign trading companies to erect vendor stalls in the High Market, granting access to Confluence's bustling foot traffic and guard protection.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: HIGH MARKET BAZAAR</span>
+            <span>DISTRICT: HIGH MARKET</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF14A / 15A: Diplomatic Interest -->
+      <article class="form-card" data-category="legal">
+        <div>
+          <span class="badge-hex">GBSF14A / 15A</span>
+          <h3>Indication of Diplomatic Interest (Successful / Failed)</h3>
+          <p class="form-purpose">
+            Official diplomatic memorandum recording inter-faction summits. GBSF14A ratifies border treaties and alliance terms; GBSF15A archives failed negotiations for future legal and tactical precedent.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: FOREIGN AFFAIRS COUNCIL</span>
+            <span>RECORDED BY WOODFORD</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF702B: Corpus Corpus Corpus -->
+      <article class="form-card" data-category="corpus" style="border-left: 4px solid var(--accent-green);">
+        <div>
+          <span class="badge-gold">GBSF702B</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-green);">ETHICAL NECROMANCY</span>
+          <h3>Voluntary Post-Mortem Power-Tool Asset Pledge</h3>
+          <p class="form-purpose">
+            Enables a citizen to voluntarily pledge their physical vessel to the Corpus Corpus Corpus program (§ 000.10) for non-sentient somatic reflex power-tool labor (deep excavation, heavy hauling where carts are infeasible) under living custodian supervision, adhering strictly to the Ethical Necromancy Code of Regulations.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: CORPUS CORPUS COLLEGIUM</span>
+            <span>SUPERVISION: LIVING CUSTODIANS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF33B: Insignia Calibration -->
+      <article class="form-card" data-category="legal">
+        <div>
+          <span class="badge-hex">GBSF33B</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold);">REGULATION § 301.3</span>
+          <h3>Insignia Calibration & Corporate Stitching Audit</h3>
+          <p class="form-purpose">
+            Mandatory audit under Guild Regulation § 301.3. Requires all officers, merchants, and contractors to submit field insignias and uniforms for dimensional calibration to prevent fraudulent corporate representation.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: COMPLIANCE & PROTOCOL</span>
+            <span>ANNUAL AUDIT CYCLE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF101D: David Waiver -->
+      <article class="form-card" data-category="legal">
+        <div>
+          <span class="badge-orange">GBSF101D</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-orange);">REGULATION § 101.4</span>
+          <h3>Petition for Name Exemption: Prohibition on the Use of the Name David</h3>
+          <p class="form-purpose">
+            Formal petition filed with the Council to request a temporary waiver for visiting dignitaries, merchant sailors, or reanimated skeletal assets who possess the restricted name "David."
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: COUNCIL OF COUNSELS</span>
+            <span>RESTRICTED NOMENCLATURE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GBSF1001H: Emergency Distress Manifest -->
+      <article class="form-card" data-category="legal" style="border-left: 4px solid #ef4444;">
+        <div>
+          <span class="badge-orange" style="background: rgba(239, 68, 68, 0.2); color: #f87171; border-color: #ef4444;">GBSF1001H</span>
+          <span style="float: right; font-family: var(--font-mono); font-size: 0.7rem; color: #ef4444;">REGULATION § 1001.7</span>
+          <h3>Emergency Distress Manifest ("Please Send Help")</h3>
+          <p class="form-purpose">
+            Official expedited emergency docket filed in the event of catastrophic dimensional rift rupture, psychic breach from He Who Eats, or siege by anomalous subterranean entities. Automatically alerts Sir Garon Ironrock's spear-wall division.
+          </p>
+        </div>
+        <div>
+          <div class="form-meta">
+            <span>AGENCY: DNEC (§ 000.9) & OPERATIONS</span>
+            <span>EMERGENCY DISPATCH</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Corporate Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+          <div class="brand-logo-mark" aria-hidden="true">
+            <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+          </div>
+          <span style="font-weight: 900; font-size: 1.25rem; letter-spacing: 0.15em; color: #ffffff;">BLACK SKY</span>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+          Merchant Republic of Confluence // 7 Sovereign Districts // Nova Regnus.<br>
+          Canonical GBSF dockets maintained under S.P.E.A.K. Archival Protocols.
+        </p>
+        <span class="nyse-badge">PORT 8081 // ONLINE</span>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Main Defense Portal</a></li>
+          <li><a href="departments.html">Operating Divisions</a></li>
+          <li><a href="staff.html">Council of Chairmen</a></li>
+          <li><a href="forms.html">Official Forms Bureau</a></li>
+          <li><a href="spectra.html">Corpus Corpus</a></li>
+          <li><a href="contact.html">Sacred Desk Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Canonical Dockets</h4>
+        <ul>
+          <li><a href="#" href="#formsContainer">GMSF0A (Petition for Form)</a></li>
+          <li><a href="#" href="#formsContainer">GBSF1A (Permanent Member)</a></li>
+          <li><a href="#" href="#formsContainer">GBSF702B (Asset Pledge)</a></li>
+          <li><a href="#" href="#formsContainer">GBSF13A (Merchant License)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Central Registry</h4>
+        <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.5;">
+          High Court Citadel, Central District<br>
+          Glowstone Terraces, Confluence<br>
+          Inquiries: <a href="contact.html">Dispatch Office</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 1026 Guild of the Black Sky. Blessed by Pecune. All bylaws codified.</div>
+      <div>Host Node: <span style="color: var(--gobs-orange-bright);">PORT 8081 (ONLINE)</span></div>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=2.0-light"></script>
+  <script>
+    // Search & Category Filter Script for Forms Catalog
+    const searchInput = document.getElementById('formSearchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const formCards = document.querySelectorAll('.form-card');
+
+    function filterForms() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      const activeBtn = document.querySelector('.filter-btn.active');
+      const activeCat = activeBtn?.getAttribute('data-filter') || 'all';
+
+      formCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const cat = card.getAttribute('data-category');
+        const matchesQuery = !query || text.includes(query);
+        const matchesCat = activeCat === 'all' || cat === activeCat;
+
+        if (matchesQuery && matchesCat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    if (searchInput) searchInput.addEventListener('input', filterForms);
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterForms();
+      });
+    });
+  </script>
+</body>
+</html>

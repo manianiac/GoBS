@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Metropolitan Registry | Guild of the Black Sky</title>
+  <meta name="description" content="Official directory and dispatch communications for the Guild of the Black Sky across Confluence, Nova Regnus, and foreign outposts.">
+  <link rel="stylesheet" href="css/style.css?v=2.1-clean">
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="Guild of the Black Sky Home">
+        <div class="brand-logo-mark" aria-hidden="true">
+          <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+        </div>
+        <span class="brand-title">BLACK SKY</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="gen3.html" class="nav-link">Airships & Docks</a></li>
+          <li><a href="map.html" class="nav-link">Realm Map</a></li>
+          <li><a href="spectra.html" class="nav-link">Corpus Corpus</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="staff.html" class="nav-link">Leadership</a></li>
+          <li><a href="forms.html" class="nav-link">Forms Bureau</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <span class="category">Civic Registry & Sacred Desk Directory // Nova Regnus</span>
+      <h1>Contact the Sacred Desk</h1>
+      <p class="page-lead">
+        Connect with our municipal administrators, file trade compact petitions, requisition airship escort wings, 
+        or request phalanx security across the municipal districts of Confluence.
+      </p>
+    </header>
+
+    <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; margin-top: 2rem;">
+      
+      <!-- Interactive Dispatch Form -->
+      <section style="background: var(--bksy-card); border: 1px solid var(--bksy-border); border-radius: var(--radius-md); padding: 2.25rem;">
+        <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Transmit Courier / Requisition Docket</h2>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Submissions are transcribed in triplicate and logged into the S.P.E.A.K. matrix by Senior Clerk Woodford.
+        </p>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Applicant Citizen / Envoy Name:</label>
+            <input type="text" id="contactName" required placeholder="e.g. Master Owain, Lady Shaylee, or Captain Roderick">
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Faction / Guild Allegiance:</label>
+            <input type="text" id="contactEmail" required placeholder="e.g. The Grove, White Ravens, Eponore, or Independent Merchant">
+          </div>
+
+          <div class="form-group">
+            <label for="contactCategory">Area of Inquiry / Codified Requisition:</label>
+            <select id="contactCategory" required>
+              <option value="Rigid Airship Escort Requisition (Form 104-NE)">Rigid Airship Escort Requisition (Form 104-NE)</option>
+              <option value="Permanent Member Contract Indenture (GBSF1A)">Permanent Member Contract Indenture (GBSF1A)</option>
+              <option value="Independent Merchant High Market License (GBSF13A)">Independent Merchant High Market License (GBSF13A)</option>
+              <option value="Material & Reagents Requisition (GBSF3C)">Material & Reagents Requisition (GBSF3C)</option>
+              <option value="Cyrinx Sighting or Security Anomaly Alert">Cyrinx Sighting or Security Anomaly Alert</option>
+              <option value="General Civic Inquiry to Sacred Desk">General Civic Inquiry to Sacred Desk</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactDetails">Operational Scope & Specification Details:</label>
+            <textarea id="contactDetails" rows="4" required placeholder="Detail cargo tonnage, flight vectors, or defense request..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Transmit Docket to Sacred Desk
+          </button>
+        </form>
+
+        <div id="contactSuccessBox" style="display: none; text-align: center; padding: 1.5rem; background: var(--bksy-blue-dim); border: 1px solid var(--bksy-blue); border-radius: var(--radius-md); margin-top: 1.5rem;">
+          <h3 style="color: var(--bksy-blue); font-size: 1.25rem;">Courier Docket Transmitted</h3>
+          <p style="font-size: 0.9rem; color: #0f172a; margin: 0.5rem 0;">
+            Tracking Docket: <strong id="contactTrackingSpan" style="color: var(--gobs-orange);">CONF-PENDING</strong>
+          </p>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">
+            Woodford has received your transmission and recorded your receipt in the Central Confluence Archives.
+          </p>
+        </div>
+      </section>
+
+      <!-- Faction Headquarters & Outposts -->
+      <section style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <article style="background: var(--bksy-card); border: 1px solid var(--bksy-border); border-radius: var(--radius-md); padding: 1.75rem;">
+          <span class="badge-gold">Central Sovereign Seat</span>
+          <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">High Court Citadel & Sacred Desk</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+            Central District<br>
+            Plaza of the Broken Chain, Confluence<br>
+            World's Spine Mountains, Nova Regnus, Osterra
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold);">
+            Jurisdiction: High Court & Council of Chairmen
+          </div>
+        </article>
+
+        <article style="background: var(--bksy-card); border: 1px solid var(--bksy-border); border-radius: var(--radius-md); padding: 1.75rem;">
+          <span class="badge-orange">Aerosystems Mooring</span>
+          <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">The Great Sky Docks & Northern Gates</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+            North District<br>
+            Confluence Skyport (3 Active Berths, 97 Planned)<br>
+            Direct access to Mount Confluence Cargo Lifts
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gobs-orange);">
+            Approach: South-By-Southwest Stratospheric Corridor
+          </div>
+        </article>
+
+        <article style="background: var(--bksy-card); border: 1px solid var(--bksy-border); border-radius: var(--radius-md); padding: 1.75rem;">
+          <span class="badge-gold">Mercantile Bazaar</span>
+          <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">The High Market & Trade Bureau</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+            South-East District<br>
+            Largest commercial bazaar in Osterra<br>
+            Vendor licenses, currency exchange, and Pecunian trade treaties
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold);">
+            Hours: Continuous Daily Commerce
+          </div>
+        </article>
+
+        <article style="background: var(--bksy-card); border: 1px solid var(--bksy-border); border-radius: var(--radius-md); padding: 1.75rem;">
+          <span class="badge-orange">Subterranean Defense</span>
+          <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">Little Timmy's Stand & Underdark Gate</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+            South District<br>
+            Reinforced Gatehouse sealing Pirate Prince Rory's Breach<br>
+            Subterranean freight checkpoint to deep glowstone mines
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #16a34a;">
+            Clearance: Level 4 Subterranean Transit
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Corporate Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+          <div class="brand-logo-mark" aria-hidden="true">
+            <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+          </div>
+          <span style="font-weight: 900; font-size: 1.25rem; letter-spacing: 0.15em; color: #0f172a;">BLACK SKY</span>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+          Merchant Republic of Confluence // Nova Regnus.<br>
+          Benevolent Corptocracy founded May 2018. Defending the realm, projecting airship supremacy, and maximizing perpetual public prosperity.
+        </p>
+        <span class="nyse-badge">PORT 8081 // ONLINE</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="departments.html#operations">Operations (Sir Garon)</a></li>
+          <li><a href="departments.html#rnd">Research & Development (Toland)</a></li>
+          <li><a href="departments.html#internal-affairs">Internal Affairs (Nikos)</a></li>
+          <li><a href="departments.html#infrastructure">Infrastructure (Riastrad)</a></li>
+          <li><a href="departments.html#trade">Trade & Commerce (Church of Pecune)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Main Defense Portal</a></li>
+          <li><a href="gen3.html">Airships & Docks</a></li>
+          <li><a href="map.html">Realm Map</a></li>
+          <li><a href="spectra.html">Corpus Corpus Collegium</a></li>
+          <li><a href="forms.html">Forms Bureau</a></li>
+          <li><a href="contact.html">Sacred Desk Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Confluence Seats</h4>
+        <ul>
+          <li><a href="staff.html">Council of Chairmen</a></li>
+          <li><a href="contact.html">Central High Court</a></li>
+          <li><a href="contact.html">Great Sky Docks</a></li>
+          <li><a href="timmy.html">Little Timmy's Stand</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 1026 Guild of the Black Sky. Blessed by Pecune. All rights reserved.</div>
+      <div>Host Node: <span style="color: var(--gobs-orange);">PORT 8081 (ONLINE)</span></div>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=2.0-light"></script>
+</body>
+</html>

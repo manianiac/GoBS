@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osterran Operational Map & Cartography | Guild of the Black Sky</title>
+  <meta name="description" content="Official high-resolution interactive cartography of the Osterran Realm. Explore Confluence, Black Sky sovereign hexes, trade corridors, and allied frontiers.">
+  <link rel="stylesheet" href="css/style.css?v=2.1-clean">
+  <style>
+    .map-viewport-wrapper {
+      background: #ffffff;
+      border: 1px solid var(--gobs-border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+    }
+
+    .map-toolbar {
+      background: #f1f5f9;
+      border-bottom: 1px solid var(--gobs-border);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+    }
+
+    .map-coordinates {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      color: var(--text-secondary);
+    }
+
+    .map-frame-container {
+      position: relative;
+      width: 100%;
+      height: 720px;
+      background: #0f172a;
+    }
+
+    .map-frame-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .legend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .legend-card {
+      background: #ffffff;
+      border: 1px solid var(--gobs-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    }
+
+    .legend-card h3 {
+      font-size: 1.05rem;
+      margin: 0.35rem 0 0.5rem;
+      color: #0f172a;
+    }
+
+    .legend-card p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="Guild of the Black Sky Home">
+        <div class="brand-logo-mark" aria-hidden="true">
+          <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+        </div>
+        <span class="brand-title">BLACK SKY</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="gen3.html" class="nav-link">Airships & Docks</a></li>
+          <li><a href="map.html" class="nav-link active">Realm Map</a></li>
+          <li><a href="spectra.html" class="nav-link">Corpus Corpus</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="staff.html" class="nav-link">Leadership</a></li>
+          <li><a href="forms.html" class="nav-link">Forms Bureau</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <span class="category">Sovereign Cartography & Geographic Reconnaissance</span>
+      <h1>Strategic Operational Map of Osterra</h1>
+      <p class="page-lead">
+        Interactive high-resolution cartographic survey of the Osterran Realm. Centered on the 
+        <strong>Guild of the Black Sky</strong> territory atop the World's Spine Mountains and the 7-hex sovereign 
+        metropolis of Confluence.
+      </p>
+    </header>
+
+    <!-- Interactive Zoomable Map Viewport -->
+    <div class="map-viewport-wrapper">
+      <div class="map-toolbar">
+        <div class="map-coordinates">
+          <span><strong style="color: var(--gobs-orange);">TARGET:</strong> BLACK SKY (CONFLUENCE)</span>
+          <span><strong>SECTOR:</strong> NOVA REGNUS (HEX 4712W)</span>
+          <span><strong>STATUS:</strong> SOVEREIGN DEFENSE ACTIVE</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <a href="https://srv2.zoomable.ca/viewer.php?i=img52cb7c4f385c87e5_Osterran_Realm_992026#zoom=1.00000&x=0.50000&y=0.19489" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">
+            ⛶ Open Fullscreen in New Window ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="map-frame-container">
+        <iframe 
+          src="https://srv2.zoomable.ca/viewer.php?i=img52cb7c4f385c87e5_Osterran_Realm_992026#zoom=1.00000&x=0.50000&y=0.19489" 
+          title="Osterran Realm Interactive Zoomable Map"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Map Points of Interest & Faction Territory Ledger -->
+    <section>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="category">Geographic Gazetteer</span>
+          <h2>Black Sky Holdings & Frontier Coordinates</h2>
+        </div>
+        <span class="badge-hex">CONFLUENCE EXPANSION: 7 HEXES</span>
+      </div>
+
+      <div class="legend-grid">
+        <div class="legend-card" style="border-left: 4px solid var(--gobs-orange);">
+          <span class="badge-hex">Hex 4712W</span>
+          <span class="badge-gold" style="float: right;">Capital</span>
+          <h3>City of Confluence</h3>
+          <p>
+            The beating heart of Nova Regnus, nestled into the World's Spine Mountains. Founded May 2018. 
+            Home to the High Court, Guild HQ, Skyport docks, and the Great High Market bazaar.
+          </p>
+        </div>
+
+        <div class="legend-card">
+          <span class="badge-hex">Hex 4609W</span>
+          <span class="badge-orange" style="float: right;">Settlement</span>
+          <h3>New Prosperity</h3>
+          <p>
+            Key northern agricultural and trade settlement developed to process raw mineral goods and supply food staples 
+            to Confluence's expanding population.
+          </p>
+        </div>
+
+        <div class="legend-card">
+          <span class="badge-hex">Hex 5210W</span>
+          <span class="badge-orange" style="float: right;">Settlement</span>
+          <h3>Solace</h3>
+          <p>
+            Eastern outpost providing forward early warning against highland raiders and anchoring Black Sky 
+            caravan security across the eastern approaches.
+          </p>
+        </div>
+
+        <div class="legend-card">
+          <span class="badge-hex">Hex 4911W</span>
+          <span class="badge-orange" style="float: right;">Settlement</span>
+          <h3>Mistveil</h3>
+          <p>
+            Fortified pass settlement cloaked in mountain mists, securing vital valley passages linking the high 
+            peaks to coastal trade corridors.
+          </p>
+        </div>
+
+        <div class="legend-card">
+          <span class="badge-hex">Plains of Hope</span>
+          <span class="badge-gold" style="float: right;">Frontier Zone</span>
+          <h3>Plains of Hope (formerly Sorrow)</h3>
+          <p>
+            Liberated territory following the defeat of the Citadel of Darkness. Black Sky maintains long-range 
+            reconnaissance patrols around the perimeter to ensure evil does not reconstitute.
+          </p>
+        </div>
+
+        <div class="legend-card">
+          <span class="badge-hex">Subterranean</span>
+          <span class="badge-hex" style="float: right;">Consulate</span>
+          <h3>Underdark Embassy & Gate</h3>
+          <p>
+            Located at Little Timmy's Stand (Hex 4713W), providing secured transit to deep glowstone mines 
+            and regulated mercantile diplomacy with subterranean enclaves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Corporate Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+          <div class="brand-logo-mark" aria-hidden="true">
+            <img src="assets/blacksky-logo.svg" alt="Guild of the Black Sky Crest" class="brand-logo-img">
+          </div>
+          <span style="font-weight: 900; font-size: 1.25rem; letter-spacing: 0.15em; color: #0f172a;">BLACK SKY</span>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+          Merchant Republic of Confluence // 7 Sovereign Hexes // Nova Regnus.<br>
+          Benevolent Corptocracy founded May 2018. Defending the realm, projecting airship supremacy, and maximizing perpetual public prosperity.
+        </p>
+        <span class="nyse-badge">PORT 8081 // ONLINE</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Defense & Fleet</h4>
+        <ul>
+          <li><a href="gen3.html">Confluence Skyport</a></li>
+          <li><a href="map.html">Osterran Realm Map</a></li>
+          <li><a href="departments.html#operations">Operations Department</a></li>
+          <li><a href="departments.html#internal-affairs">Internal Affairs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Civic & Regulatory</h4>
+        <ul>
+          <li><a href="forms.html">Canonical Forms Bureau</a></li>
+          <li><a href="forms.html">GBSF702B (Asset Pledge)</a></li>
+          <li><a href="forms.html">GMSF0A (Petition for Form)</a></li>
+          <li><a href="forms.html">GBSF1A (Permanent Contract)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Confluence Seats</h4>
+        <ul>
+          <li><a href="staff.html">Council of Chairmen</a></li>
+          <li><a href="contact.html">Central High Court (4712W)</a></li>
+          <li><a href="contact.html">Great Sky Docks (4711W)</a></li>
+          <li><a href="contact.html">High Market (4812W)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 1026 Guild of the Black Sky. Blessed by Pecune. All rights reserved.</div>
+      <div>Host Node: <span style="color: var(--gobs-orange);">PORT 8081 (ONLINE)</span></div>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=2.0-light"></script>
+</body>
+</html>

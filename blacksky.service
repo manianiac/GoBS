@@ -1,0 +1,16 @@
+[Unit]
+Description=The Guild of the Black Sky - Defense Contractor Web Portal
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/GoBS
+ExecStart=/usr/bin/python3 /home/pi/GoBS/server.py 8081
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

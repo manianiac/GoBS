@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Logs & Runtime State
+data/server.log
+*.log
+
+# Large reference lore archives (external PDFs/Drive docs)
+lore_archive/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*~
